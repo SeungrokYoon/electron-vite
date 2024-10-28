@@ -12,6 +12,7 @@
     "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
     "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
     "typecheck": "yarn run typecheck:node && npm run typecheck:web",
+    "test": "vitest",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "yarn run typecheck && electron-vite build",
@@ -56,6 +57,7 @@
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.13",
     "typescript": "5.5.4",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "vitest": "^2.1.3"
   }
 }
